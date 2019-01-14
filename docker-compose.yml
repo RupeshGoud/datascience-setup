@@ -1,0 +1,12 @@
+version:                "2"
+services:
+  datascience-notebook:
+      image:            jupyter/datascience-notebook
+      volumes:
+        - /home/rupesh/Desktop/projects/ml-notebooks/notebooks:/home/jovyan/
+        #Mounting datadump folder at /home/jovyan/
+        - /home/rupesh/Desktop/projects/ml-notebooks/datadump:/home/jovyan/datadump
+        #Mounting datadump folder at /home/jovyan/datadump
+      ports:
+        - 8888:8888
+      container_name:   datascience-notebook-container
