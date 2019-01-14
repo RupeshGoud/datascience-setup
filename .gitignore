@@ -5,3 +5,4 @@ notebooks/.config
 notebooks/.ipython
 notebooks/.jupyter
 notebooks/.local
+datadump/*
